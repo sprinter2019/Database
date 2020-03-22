@@ -1,0 +1,72 @@
+sql/team061_p3_schema.sql:
+	Set up SQL tables and schema
+
+sql/team061_p3_test_data.sql:
+	Insert sample data seeds
+
+Login.php
+	Query for users PIN
+
+CorkBoard_Home.php:
+	Query for user’s name for the logged in user
+	Query for the last 4 recently updated CorkBoards for the current user
+	Query for CorkBoards owned by the current user
+
+popular_tags.php
+	Query for popular tags from the database
+
+popular_sites.php
+	Query for popular sites from the database
+
+Corkboard_statistics.php
+	Query for list the total number of the public_board, public_pushpin, private_board and private_pushpin
+
+search.php:
+	Query for public PushPins that contain the search keyword in description, tags, or category
+
+view_corkboard.php
+	Query to get CorkBoard owner, category, title and last updated date
+	Query to determine if the current user follows the owner of this CorkBoard
+	Query to get each PushPinID, URL and description for each PushPin on the current CorkBoard
+	Query to get the count of watchers for this CorkBoard
+	Query to get the owner of the current CorkBoard
+	Query to determine if current CorkBoard is private
+
+view_pushpin.php:
+	Query for PushPin’s owner, whether current user has followed the owner
+	Query for PushPin’s pinned date, website, URL, description, tags
+	Query for total likes for PushPin
+	Query for all comments for PushPin
+
+Add_CorkBoard.php:
+	Query for CorkBoard Category
+
+Add_CorkBoard_query.php:
+	Insert new corkboard to corkboard table
+	Retrieve corkboard ID
+	Insert new corkboard to public/private corkboard
+
+add_pushpin.php
+	Retrieve the name of the corkboard to add the new pushpin to
+
+add_pushpin_handle.php
+	Query for adding new pushpin to the corkboard
+	Query for adding new tags
+
+ops/post_comment.php:
+	Insert a comment for a PushPin
+
+ops/follow.php:
+	Insert/delete a FOLLOW relationship between two users
+
+ops/like.php:
+	Insert a LIKE relationship between a user and a PushPin
+
+ops/unlike.php:
+	Delete a LIKE relationship between a user and a PushPin
+	ops/watch.php
+	Insert a WATCH between a user and a CorkBoard
+	Delete a WATCH between a user and a CorkBoard
+
+ops/watch.php:
+	Insert/delete a WATCH relationship between user and PushPin
